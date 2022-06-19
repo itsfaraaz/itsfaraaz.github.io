@@ -19,6 +19,6 @@ g,0<d.length&&(d=za[d[0]])&&(a.c[e]=d))}a.c[e]||(d=za[e])&&(a.c[e]=d);for(d=0;d<
 
 WebFont.load({
   google: {
-    families: ['Cormorant Garamond:700', 'Lato:300,400,700']
+    families: ['Cormorant Garamond:700', 'Lato:300,400,700', 'Inconsolata:300,400,700', 'Source Sans Pro:300,400,700', 'Open Sans:800']
   }
 });
