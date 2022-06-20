@@ -1,0 +1,62 @@
+---
+layout: default
+title: Story
+images:
+  - story/faraaz.jpg
+  - story/saima-bday.jpg
+  - story/brunch.jpg
+  - story/bsb.jpg
+  - story/hiking.jpg
+  - story/internship-seattle.jpg
+  - story/mopop.jpg
+  - story/sasa.jpg
+  - story/space-needle.jpg
+  - story/coffee.jpg
+  - story/la.jpg
+  - story/squish.jpg
+  - story/md.jpg
+  - story/bw.jpg
+  - story/frontier.jpg
+---
+
+<div class="about {% if site.scrollappear_enabled %}scrollappear{% endif %}">
+  <h1>Story</h1>
+  <p>
+    A picture is worth a thousand words. Here's my life in pictures :)
+  </p>
+
+  <div class="igrid are-images-unloaded">
+    <div class="igrid__col-sizer"></div>
+    <div class="igrid__gutter-sizer"></div>
+    
+    {% assign index = 1 %}
+    {% for thing in page.images %}
+    <div class="igrid__item igrid__item--width{{ index }}">
+      {% include image.html path=thing path-detail=thing alt="picture of life" %}
+    </div>
+
+    {% if index == 3%}
+    {% assign index = 1 %}
+    {% else %}
+    {% increment my_counter %}
+    {% endif %}
+
+    {% endfor %}
+  </div>
+
+  <div class="page-load-status">
+    <div class="loader-ellips infinite-scroll-request">
+      <span class="loader-ellips__dot"></span>
+      <span class="loader-ellips__dot"></span>
+      <span class="loader-ellips__dot"></span>
+      <span class="loader-ellips__dot"></span>
+    </div>
+    <p class="infinite-scroll-last">End of content</p>
+    <p class="infinite-scroll-error">No more pages to load</p>
+  </div>
+
+
+</div>
+
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.js"></script>

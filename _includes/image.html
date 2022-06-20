@@ -1,15 +1,14 @@
-<a href="{% asset '{{ include.path-detail }}' @path %}">
-  {% if include.width %}
-  <img src="{% asset '{{ include.path }}' @path %}" alt="{{ include.alt }}" class="zooming"
+{% if include.width %}
+<img src="{% asset '{{ include.path }}' @path %}" alt="{{ include.alt }}" class="zooming"
+data-rjs="{% asset '{{ include.path-detail }}' @path %}"
+width="{{ include.width }}"
+data-zooming-width="{{ assets[include.path-detail].dimensions.width }}"
+data-zooming-height="{{ assets[include.path-detail].dimensions.height }}"
+/>
+{% else %}
+<img src="{% asset '{{ include.path }}' @path %}" alt="{{ include.alt }}" class="zooming"
   data-rjs="{% asset '{{ include.path-detail }}' @path %}"
-  width="{{ include.width }}"
   data-zooming-width="{{ assets[include.path-detail].dimensions.width }}"
   data-zooming-height="{{ assets[include.path-detail].dimensions.height }}"
-  />
-  {% else %}
-  <img src="{% asset '{{ include.path }}' @path %}" alt="{{ include.alt }}" class="zooming"
-    data-rjs="{% asset '{{ include.path-detail }}' @path %}"
-    data-zooming-width="{{ assets[include.path-detail].dimensions.width }}"
-    data-zooming-height="{{ assets[include.path-detail].dimensions.height }}"
-  />
-  {% endif %}
+/>
+{% endif %}

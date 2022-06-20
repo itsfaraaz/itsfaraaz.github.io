@@ -18,6 +18,12 @@
   text-transform: lowercase;
 }
 
+.header-story-link {
+  font-family: $serif;
+  color: $yellow !important;
+  text-decoration: none;
+}
+
 .header-links {
   float: right;
   padding: 0;

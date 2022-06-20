@@ -3,7 +3,7 @@
 blog_theme: dark # Or use dark
 name: Faraaz Khan
 paginate: 25
-url: http://chalk.nielsenramon.com
+url: /
 
 
 # Optional settings
@@ -58,8 +58,7 @@ collections:
     output: true
     permalink: /tag/:slug/
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: my_tags
     values:
