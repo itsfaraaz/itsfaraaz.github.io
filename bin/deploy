@@ -11,6 +11,8 @@ git checkout mainline
 
 git branch -D gh-pages
 
+git branch gh-pages
+
 git checkout gh-pages
 
 # Build site.
