@@ -10,7 +10,7 @@ tags: [life]
                       alt="bedroom view from the 21st floor with clouds everywhere and a lake in the distance"
                       description="views from my bedroom window in seattle" %}
 
-i realized this summer i have a super toxic relationship with wanting to always be busy.
+i realized this summer i have a super toxic relationship with always wanting to be busy.
 
 sometimes i feel like i’m doing too much. but when i have nothing to do, i immediately feel like i am doing too little.
 
