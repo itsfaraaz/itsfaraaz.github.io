@@ -1,4 +1,0 @@
----
-slug: engineering
-name: engineering
----
